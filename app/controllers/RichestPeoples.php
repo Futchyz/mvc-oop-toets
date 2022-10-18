@@ -3,7 +3,7 @@
 class RichestPeoples extends Controller
 {
     
-    private $richModel;
+    private $richmodel;
   
     public function __construct() 
     {

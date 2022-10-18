@@ -47,7 +47,7 @@ class Core
 
             return $url;
         } else {
-            return array('Landingpages', 'index');
+            return array('landingpages', 'index');
         }
     }
 }

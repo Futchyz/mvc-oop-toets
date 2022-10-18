@@ -1,13 +1,13 @@
 <?php
 
-class landingpages extends Controller
+class RichestPeoples extends Controller
 {
     
-    private $richmodel;
+    private $richModel;
   
     public function __construct() 
     {
-        $this->richModel = $this->model('RichestPeople');
+        $this->richModel = $this->model('richestpeople');
     }
 
     public function index()

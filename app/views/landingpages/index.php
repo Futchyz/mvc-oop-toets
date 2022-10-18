@@ -9,6 +9,6 @@
         </tr>
     </thread>
     <tbody>
-        <?= $data["richestpeople"]; ?>
+        <?= $data["Richestpeople"]; ?>
     </tbody>
 </table>

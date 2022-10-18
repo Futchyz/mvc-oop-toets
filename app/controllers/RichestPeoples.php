@@ -3,11 +3,11 @@
 class RichestPeoples extends Controller
 {
     
-    private $richmodel;
+    private $richModel;
   
     public function __construct() 
     {
-        $this->richModel = $this->model('richestpeople');
+        $this->richModel = $this->model('Richestpeople');
     }
 
     public function index()

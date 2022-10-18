@@ -17,10 +17,10 @@ class Core
             unset($url[0]);
         }
 
-        // require_once het bestand waar de controllerclass in zit
+ 
         require_once '../app/controllers/'. $this->currentController . '.php';
 
-        // Maak een nieuw object van de controllerclass
+       
         $this->currentController = new $this->currentController();
      
         if (isset($url[1])) {
@@ -30,8 +30,7 @@ class Core
             }
         }
 
-        // ternary operator
-        // Dit is de parameterlijst van je method in de controllerclass
+
         $this->params = $url ? array_values($url): [];
 
         call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
